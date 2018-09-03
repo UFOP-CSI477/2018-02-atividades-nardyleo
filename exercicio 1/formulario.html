@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Cadastro de Jogo</title>
+	</head>
+	<body>
+		<link href = "geral.css" rel="stylesheet" type="text/css">
+		<p class="titulo">Cadastro do jogo</p>
+
+		<div class="form">
+			<label for="titulo"> Titulo:</label>
+			<input type="text" id="titulo" name="titulojogo" placeholder="Digite o Titulo aqui">
+
+			<label for="produtora"> Produtora:</label>
+			<input type="text" id="produtora" name="produtorajogo" placeholder="Digite a Produtora aqui">
+
+			<label for="preco">Preco:</label>
+			<input type="number" id="preco" name="precojogo" placeholder="R$">
+
+			<label for="comprado">Possui o jogo?</label>
+			<br>
+
+<!-- 		<input type="radio" id = "comprado" name="compradojogo">
+			<label for="comprado">Sim</label>
+			<input type="radio" id = "comprado" name="compradojogo">
+			<label for="comprado">Nao</label> -->
+
+			<label class="container">Sim
+			  <input type="radio" checked="checked" name="radio">
+			  <span class="checkmark"></span>
+			</label>
+			<label class="container">Nao
+			  <input type="radio" name="radio">
+			  <span class="checkmark"></span>
+			</label>
+
+			<input type="submit" value="Enviar">
+		</div>
+		<br>
+		<div class="botao" style="text-align:center">
+		  <a href="principal.html">Voltar</a>
+		</div>
+	</body>
+</html>
