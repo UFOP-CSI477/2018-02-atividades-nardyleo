@@ -1,0 +1,153 @@
+menu {
+	margin 0;
+	padding: 0;
+	list-style: none;
+	width: 300px;
+}
+
+menu li{
+	position: relative;
+}
+
+li menu{
+	position: absolute;
+	left: 300px;
+	top: 0;
+	display: none;
+}
+
+menu li a{
+	display: block;
+	text-decoration: none;
+	color: #008080;
+	background: #fff;
+	padding: 5px;
+	border: 1px solid #ccc;
+	height: 50px;
+	font-size: 25px;
+}
+
+.menu a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+.menu li:hover menu{
+ display: block;
+}
+
+p.titulo{
+	color: #008080;
+	text-align: left;
+	font-size: 50px;
+}
+
+table, th, td {
+		border: 1px solid black;
+		border-collapse: collapse;
+}
+
+table {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*opcoes corpo da tabela*/
+td{
+	text-align: center;
+	height: 50px;
+}
+
+/*opcoes cabecalho*/
+th{
+	height: 30px;
+	background-color: #008080;
+	color: white;
+}
+
+/*alterando cor dentro da tabela branco e cinza*/
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+tr:hover {
+	background-color: #ccc;
+}
+
+.fundo{
+	color: red;
+}
+
+.botao {
+    /*width: 200px;*/
+}
+
+.botao a {
+    background-color: #008080;
+    color: white;
+    display: inline;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.botao a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #008080;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+input[type=submit]:hover {
+    background-color: #C0C0C0kk;
+}
+
+
+.container {
+    display: inline;
+    position: relative;
+    /*padding-left: 35px;*/
+    /*margin-bottom: 12px;*/
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

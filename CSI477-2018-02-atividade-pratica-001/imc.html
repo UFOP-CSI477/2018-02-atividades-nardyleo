@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Competicao</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	    <script src="jquery-3.3.1.js"></script>
+	    <script src="funcoes.js"></script>
+	</head>
+	<body>
+		<div class="jumbotron jumbotron-fluid row justify-content-md-center">
+		  <div class="container">
+		    <h1 class="display-2">IMC</h1>
+		    <p class="lead">Calculo IMC</p>
+		  </div>
+		</div>
+
+	    <div class="container">
+		    <form name="dados" id="formulario">
+		      <div class="form-group col" id="grupoV1">
+		        	<label for="Kilos" id="labelV1">Kilos:</label>
+		        	<input type="text" name="kilos" value="" class="form-control" placeholder="0">
+
+		        	<div class="alert alert-danger" style="display: none" id="alertaV1">
+		          		<span>Informe o peso corretamente!</span>
+		        	</div>
+		      </div>
+
+		      <div class="form-group col">
+		        	<label for="Metros" id="labelV2">Metros:</label>
+		        	<input type="number" name="metros" value="" class="form-control" step="0.01" placeholder="0.00">
+
+			        <div class="alert alert-danger" style="display: none" id="alertaV2">
+			          <span>Informe a altura corretamente!</span>
+			        </div>
+		      </div>
+
+		      <div class="form-group col">
+		        	<label for="imc">Resultado:</label>
+		        	<input type="text" name="imc" class="form-control">
+		      </div>
+		      <div class="col-sm-12 text-center">
+		      	<button type="button" class="btn btn-primary center-block col-md-4 " onclick="calcular()" name="calculo">Calcular</button>
+				<button type="button" class="btn btn-danger center-block col-md-4 " onclick="goBack()">Voltar</button>
+		  	  </div>
+
+		      <div class="form-group col">
+		        	<label for="pesoI" id="pesoIdeall">Peso Ideal:</label>
+		        	<label for="pesoIde" id="pesoIdeal">0.00</label>
+		      </div>
+		 	</form>
+	 	</div>
+
+			<table id="tabela-resultado-imc">
+				<thead>
+					<tr class="table-primary">
+						<td>Resultado</td>
+						<td>Situacao</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="td-first-col">Abaixo de 18,5</td>
+						<td>Subnutricao</td>
+					</tr>
+					<tr>
+						<td class="td-first-col">Entre 18,5 e 24,99</td>
+						<td><em>Peso</em> normal</td>
+					</tr>
+					<tr>
+						<td class="td-first-col">Entre 25 e 29,99</td>
+						<td>Acima do <em>peso</em></td>
+					</tr>
+					<tr>
+						<td class="td-first-col">Entre 30 e 34,99</td>
+						<td><em>Obesidade</em> I</td>
+					</tr>
+					<tr>
+						<td class="td-first-col">Entre 35 e 39,99</td>
+						<td><em>Obesidade</em> II (severa)</td>
+					</tr>
+					<tr>
+						<td class="td-first-col">Acima de 40</td>
+						<td><em>Obesidade</em> III (morbida)</td>
+					</tr>
+				</tbody>
+			</table>
+	</body>
+</html>
