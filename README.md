@@ -1,7 +1,19 @@
-\00
+# **CSI477-2018-02 - Repositório de Atividades**
+##Leonardo Nardy*
 
-# 2018-02 - Atividades do Fernando
+--------------
 
-Atividades da disciplina Web.
+### Atividade Prática 1
+Competição de carros e cálculo de IMC
 
-[Entre em contato]
+
+### 1. Atividade
+
+  ***Primeira Atividade:*** 01 - Criar uma página principal com um menu e as seguintes opções: cadastrar (formulário), listar (tabela) e sair (página). Apresentar - CSS
+
+### 2. Atividade
+
+  ***Primeira Atividade:*** Criar uma página principal com um menu e as seguintes opções: cadastrar (formulário), listar (tabela) e sair (página). Apresentar - BOOTSTRAP
+
+
+
